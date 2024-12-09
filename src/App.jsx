@@ -1,44 +1,15 @@
-import NavItems from "./components/NavItems";
-import logo from "./assets/logo-walled.png";
-import { useState } from "react";
+
+import Greeting from "./components/Greeting"
+import Profile from "./components/Profile"
 
 function App() {
-  const [activeTab, setActiveTab] = useState("Dashboard");
-
-  const menu = [
-    {
-      title: "Dashboard",
-      link: "#",
-    },
-    {
-      title: "Transfer",
-      link: "#",
-    },
-    {
-      title: "Topup",
-      link: "#",
-    },
-    {
-      title: "Signout",
-      link: "#",
-    },
-  ];
-
-  const handleClick = (activeTab) => {
-    setActiveTab(activeTab);
-  };
+  
   return (
     <>
-      <nav className="flex items-center w-screen justify-between bg-white py-4 px-8">
-        <img src={logo} />
-        <div className="flex gap-x-8">
-          <NavItems
-            menu={menu}
-            activeTab={activeTab}
-            handleClick={handleClick}
-          />
-        </div>
-      </nav>
+      <div className="flex pt-10 ps-24 gap-x-32 pe-16">
+        <Greeting/>
+        <Profile/>
+      </div>
     </>
   );
 }
