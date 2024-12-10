@@ -1,7 +1,5 @@
 function Transfer() {
-    return(
-        <p className="text-black">HALAMA TRANSFER</p>
-    );
+  return <p className="text-black">HALAMA TRANSFER</p>;
 }
 
-export default Transfer
+export default Transfer;

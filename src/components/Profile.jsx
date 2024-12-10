@@ -1,5 +1,5 @@
 import { useState } from "react";
-import photoProfile from "/src/assets/image.png"
+import photoProfile from "/src/assets/chelsea.png"
 
 function Profile () {
     const [isAvatarActive, setIsAvatarActive] =useState(false);
