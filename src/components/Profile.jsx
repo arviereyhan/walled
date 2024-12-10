@@ -1,12 +1,12 @@
 import { useState } from "react";
 import photoProfile from "/src/assets/chelsea.png"
 
-function Profile () {
+function Profile ({user}) {
     const [isAvatarActive, setIsAvatarActive] =useState(false);
     return (
         <div className="flex items-center w-full justify-end">
             <div className="flex flex-col me-8 justify-center">
-            <p className="font-bold text-black">Chelsea Immanuela</p>
+            <p className="font-bold text-black">{`${user?.name}`}</p>
             <p className="text-black">Personal Account</p>
         </div>
             <div 
@@ -15,7 +15,6 @@ function Profile () {
               }`}
              onClick={() => setIsAvatarActive((prev) => !prev)}
             >
-            
             <img className = "rounded-full w-20" src={photoProfile} ></img>
         </div>
         </div>

@@ -1,4 +1,5 @@
 import { NavLink } from "react-router";
+import { CiSun } from "react-icons/ci";
 
 function NavItems({ menu, handleClick, onSignout }) {
   return (
@@ -20,6 +21,9 @@ function NavItems({ menu, handleClick, onSignout }) {
           {item.title}
         </NavLink>
       ))}
+      <button className="bg-black" >
+        <CiSun className=""/>
+      </button>
     </div>
   );
 }
