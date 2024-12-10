@@ -25,5 +25,52 @@
             "balance" : "5000000",
             "accountno" : "12345"
         }
+    ],
+    "transaction": [
+        {
+            "date" : "20:10 - 30 June 2022",
+            "type" : "DEBIT",
+            "source" : "310001001",
+            "description" : "Fore Coffe",
+            "Amount" : "- 75.000,00"
+        },
+
+        {
+            "date" : "20:10 - 30 June 2022",
+            "type" : "CREDIT",
+            "source" : "310001001",
+            "description" : "Topup from bank Transfer",
+            "Amount" : "+ 1.000.000,00"
+        },
+        {
+            "date" : "20:10 - 30 June 2022",
+            "type" : "DEBIT",
+            "source" : "310001001",
+            "description" : "Fore Coffe",
+            "Amount" : "- 75.000,00"
+        },
+
+        {
+            "date" : "20:10 - 30 June 2022",
+            "type" : "CREDIT",
+            "source" : "310001001",
+            "description" : "Topup from bank Transfer",
+            "Amount" : "+ 1.000.000,00"
+        },
+        {
+            "date" : "20:10 - 30 June 2022",
+            "type" : "DEBIT",
+            "source" : "310001001",
+            "description" : "Fore Coffe",
+            "Amount" : "- 75.000,00"
+        },
+
+        {
+            "date" : "20:10 - 30 June 2022",
+            "type" : "CREDIT",
+            "source" : "310001001",
+            "description" : "Topup from bank Transfer",
+            "Amount" : "+ 1.000.000,00"
+        }
     ]
   }

@@ -35,10 +35,12 @@ function Navbar() {
     navigate("/");
   };
 
+  
+
   return (
-    <nav className="flex items-center w-screen justify-between bg-white py-4 px-8">
+    <nav className="flex items-center w-screen justify-between bg-white py-4 px-8 dark:bg-blue-900">
       <img src={logo} />
-      <div className="flex gap-x-8">
+      <div className="flex gap-x-8 ">
         <NavItems
           menu={menu}
           activeTab={activeTab}
