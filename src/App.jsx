@@ -1,11 +1,10 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Greeting from "./components/Greeting";
 import Profile from "./components/Profile";
 import viewIcon from "./assets/eye.png";
 import AccoutNo from "./components/AccountNo";
 import useFetch from "../hooks/useFetch";
 import AddButton from "./components/AddButton";
-import addIcon from "./assets/add.svg";
 import { IoMdAdd } from "react-icons/io";
 import { FaRegPaperPlane } from "react-icons/fa";
 import Table from "./components/Table"
@@ -34,7 +33,7 @@ function App() {
         <Profile user={user} />
       </div>
 
-      <div className="flex mt-[4.5rem] gap-x-12 ps-20 me-12">
+      <div className="flex mt-[4.5rem] gap-x-12 ps-20 pe-20">
         <AccoutNo user={user} />
         <div className="bg-white p-12 rounded-2xl w-full text-black flex flex-row justify-between">
           <span className="flex items-center mt-3 gap-x-2">
@@ -54,7 +53,7 @@ function App() {
             </div>
           </span>
           <div className="flex flex-row gap-8">
-          <AddButton className="bg-[#2CA18E] text-white p-4 rounded-full shadow-md hover:scale-110 transition-transform">
+          <AddButton className="bg-[#2CA18E] text-white p-4 rounded-full shadow-md hover:scale-110 transition-transform" onClick={() => navigate("/topup")} >
             <IoMdAdd className="text-2xl" />
           </AddButton>
           <AddButton className="bg-[#2CA18E] text-white p-4 rounded-full shadow-md hover:scale-110 transition-transform" onClick={() => navigate("/transfer")} >

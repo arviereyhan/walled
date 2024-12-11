@@ -10,7 +10,7 @@ function Profile ({user}) {
             <p className="text-black">Personal Account</p>
         </div>
             <div 
-             className={`rounded-full border-[6px] hover:border-[6px] hover:border-[#178F8D] cursor-pointer transition-all ${
+             className={`rounded-full border-[6px] hover:border-[6px] hover:border-[#178F8D] cursor-pointer transition-all me-4 ${
                 isAvatarActive ? "border-[#178F8D]" : "border-[#fafbfd]"
               }`}
              onClick={() => setIsAvatarActive((prev) => !prev)}

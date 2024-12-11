@@ -11,7 +11,7 @@ function Table() {
   return (
     <div className="overflow-x-auto mt-8 px-20 w-auto">
       <table className="min-w-full border-collapse border border-gray-200 shadow-md rounded-lg">
-        <thead className="bg-gray-100">
+        <thead className="bg-white">
           <tr>
             <th className="border border-gray-300 px-4 py-2 text-left text-sm font-medium text-gray-700">
               Date & Time
@@ -34,7 +34,7 @@ function Table() {
           {data.map((transaction, index) => (
             <tr
               key={index}
-              className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}
+              className={index % 2 === 0 ? "bg-gray-50" : "bg-white"}
             >
               <td className="border border-gray-300 px-4 py-2 text-sm text-gray-600">
                 {transaction.date}
